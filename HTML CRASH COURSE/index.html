@@ -1,0 +1,142 @@
+<!--Indica que o documento é HTML5-->
+<!DOCTYPE html>
+<!--A raiz de um elemento HTML-->
+<html>
+    <!--A coleção de metadados usada no documento-->
+    <head>
+        <!--Titulo do documento-->
+        <title> HTML Cheat Sheet </title>
+    </head>
+    <!--O conteudo do documento-->
+    <body>
+        <!--Tag a acompanhada de href simboliza um hyperlink-->
+        <a href="blog.html">Ir para o Blog</a>
+        <!--Headings-->
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <!--Paragrafo-->
+        <!--Strong denota força e importancia de um trecho-->
+        <!--em é utilizado para dar enfase a um trecho-->
+        <p><strong>Lorem ipsum dolor</strong> sit amet consectetur adipisicing elit.
+            <em>Explicabo blanditiis</em>, temporibus obcaecati recusandae quos officia incidunt dolore eveniet,
+            earum nobis maiores molestias quo, excepturi facere tenetur amet repudiandae molestiae hic?
+        </p>
+        <!--target especifica onde sera exibido o novo link. _blank pede para abrir em uma nova janela-->
+        <p>Lorem ipsum <a href="http://google.com" target="_blank">dolor sit</a>  amet consectetur adipisicing elit.
+            Explicabo blanditiis, temporibus obcaecati recusandae quos officia incidunt dolore eveniet,
+            earum nobis maiores molestias quo, excepturi facere tenetur amet repudiandae molestiae hic?
+        </p>
+        <!--Lista Sem Ordem-->
+        <ul>
+            <!--Itens da lista-->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ul>
+        <!--Lista Ordenada-->
+        <ol>
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+            <li>List Item 4</li>
+        </ol>
+
+        <!--Tabelas-->
+        <table>
+            <!--O cabeçalho da tabela-->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <!--O corpo da tabela-->
+            <tbody>
+                <tr>
+                    <td>Joao</td>
+                    <td>joao@gmail.com</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Thereza</td>
+                    <td>thereza@gmail.com</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Luciana</td>
+                    <td>luciana@gmail.com</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td>Sandro</td>
+                    <td>sandro@gmail.com</td>
+                    <td>44</td>
+                </tr>
+            </tbody>
+            <!--Formulario-->
+        </table>
+        <!--br pula linha-->
+        <br>
+        <!--hr desenha uma linha horizontal-->
+        <hr>
+        <br>
+        <!--Formulario-->
+        <form action="process.php" method="POST">
+            <div>
+                <!--Label é o nome do bloco a ser preenchido-->
+                <label>First Name</label>
+                <!--Um dado a ser digitado-->
+                <input type="text" name="firstName" placeholder="Enter Firs Name">    
+            </div>
+            <br>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastName">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <!--Cria uma area de texto-->
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Gender</label>
+                <!--Select serve para escolher um elemento de uma lista-->
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <br>
+            <input type="submit" name="submit" value="Submit!">
+        </form>
+        <!--Botao-->
+        <button>Click Me</button>
+        <!--Imagens-->
+        <br>
+        <a href="img/Iundex.jpg">
+            <img src="img/Iundex.jpg" alt="Iundex Gundyr" width="200">
+        </a>
+        <!--Cotação-->
+        <blockquote cite="http://traversymedia.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit voluptatum culpa ipsa inventore tempora, architecto sint fugiat! Omnis minus tempora vel? Magnam inventore velit delectus voluptates labore doloremque eius ipsa.
+        </blockquote>
+        <!--abbr indica uma abreviação, sendo que o titulo é o significado da abreviação-->
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+        <!--Cite indica referencia a um outro conteudo-->
+        <p><cite>HTML crash course</cite> by Brad Traversy</p>
+    </body>
+</html>
